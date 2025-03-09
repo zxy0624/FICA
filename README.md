@@ -1,26 +1,26 @@
 # FICA
 
-该项目是利用 MATLAB 编写的，旨在协助中国河南某气体制造加工厂进行优化调度。该问题复杂，因为气体加工涉及传统的柔性制造、分批制造、并行机制造和开放式制造等问题的总和。关于高个性化车间的生产调度研究较少，因此，对标准气体制造行业车间调度问题的研究对于提升企业生产效率、降低能耗以及满足客户差异化需求具有重要的实际意义。
+This project, written in MATLAB, aims to assist a gas manufacturing and processing plant in Henan, China, with optimization scheduling. The problem itself is complex, as gas processing involves various manufacturing issues such as flexible manufacturing, batch manufacturing, parallel machine manufacturing, and open manufacturing. Research on production scheduling for highly personalized workshops is still limited. Therefore, studying the workshop scheduling problem in the standard gas manufacturing industry is of great practical significance for improving production efficiency, reducing energy consumption, and meeting diverse customer demands.
 
-## 项目背景
+## Project Background
 
-1. **问题复杂性**：气体加工涉及多个制造问题的总和。
-2. **数学建模**：需要全面反映问题本身，如加工损耗、运输损耗、机器操作等。由于缺乏现成的数据集，需要在实际工厂内采样，整理数据以供优化。
-3. **算法选择**：常规算法（如遗传算法、退火算法）效果较差。基于帝国竞争算法（ICA），创造出适合解决本问题的深层联邦竞争算法（FICA）。
+1. **Complexity of the Problem**: Gas processing involves a combination of multiple manufacturing issues.
+2. **Mathematical Modeling**: Attempts to comprehensively reflect the problem itself, including processing loss, transportation loss, machine operations in batch manufacturing, etc. Due to the lack of existing datasets, sampling in actual factories is required to organize data for optimization.
+3. **Algorithm Selection**: Conventional algorithms (such as genetic algorithms, simulated annealing algorithms) are less effective. Based on the Imperialist Competitive Algorithm (ICA), a deep Federal Competitive Algorithm (FICA) is created to solve the problem.
 
-## 算法结构
+## Algorithm Structure
 
-算法分为两层：
-- **内层**：位于 `formula` 文件夹中，直接运行 `main` 函数即可。
-- **外层**：主函数为 `FICAmain`，同样直接运行即可。
+The algorithm is divided into two layers:
+- **Inner Layer**: Located in the `formula` folder, run the `main` function directly.
+- **Outer Layer**: The main function is `FICAmain`, which is also run directly.
 
-## 使用方法
+## Usage
 
-1. 将项目文件夹加入 MATLAB 路径中。
-2. 运行 `FICAmain` 函数开始优化调度。
+1. Add the project folder to the MATLAB path.
+2. Run the `FICAmain` function to start the optimization scheduling.
 
-## 许可证
+## License
 
-本项目基于 MIT 许可证进行发布，详情请参阅 LICENSE 文件。
+This project is licensed under the MIT License. For more details, please refer to the LICENSE file.
 
 ---
